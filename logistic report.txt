@@ -1,10 +1,10 @@
 
- ************************************************************ 
+ ****************************** for train phase ******************************
   Accuracy of train is 82.8%. 
   Precision of train is 85.7%. 
   Recall / Sensitivity / TPR  of train is 90.8%. 
 
- ************************************************************ 
+ ****************************** for testing phase ******************************
   Accuracy of testing is 72.6%. 
   Precision of testing is 78.7%. 
   Recall / Sensitivity / TPR  of testing is 78.7%. 

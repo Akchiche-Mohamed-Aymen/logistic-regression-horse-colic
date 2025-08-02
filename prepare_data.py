@@ -60,5 +60,5 @@ df = removeOutliers(df ,'respiratory_rate')
 df = removeOutliers(df ,'pulse')
 df = removeOutliers(df ,'temperature')
 df = removeOutliers(df , 'temp_of_extremities_2')
-df.to_csv("cleaned_data.csv")
-
+df.to_csv("cleaned_data.csv") 
+print("data has cleaned successfully")
