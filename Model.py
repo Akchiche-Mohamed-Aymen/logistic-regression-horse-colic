@@ -54,10 +54,11 @@ class K_nearest_neighbors:
         self.Y = Y
     
     def euclidean_distance(self , newX):
-        return np.sqrt(np.sum(self.X - newX , axis = 1) ** 2)
+        return np.sqrt(np.sum((self.X - newX) ** 2, axis=1))
     def predict(self , newX):
         newX = _standardize(newX , self.mean , self.std)
         distances = self.euclidean_distance(newX)
-        top_k_indexes = np.argsort(distances)[-self.k:][::-1]
+        top_k_indexes = np.argsort(distances)[:self.k]
         top_k_Y = self.Y[top_k_indexes]
         return mode(top_k_Y, keepdims=True).mode[0]
+    
